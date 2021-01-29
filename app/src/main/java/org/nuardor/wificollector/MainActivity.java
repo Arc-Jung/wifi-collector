@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity implements AutoPermissionsLi
             writeGps(date_text + ", " + latitude + ", " + longitude);
             final Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
             Toast.makeText(getApplicationContext(), "GPS 측정을 완료하였습니다.", 2000).show();
-            vibrator.vibrate(2000);
+            vibrator.vibrate(1000);
             wifiManager.startScan();
         }
 
